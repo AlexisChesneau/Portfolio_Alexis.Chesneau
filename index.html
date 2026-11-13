@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="{{lang}}">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0A1020" />
+    <meta name="color-scheme" content="dark" />
+
+    <!-- SEO (valeurs injectées depuis src/data/cv.ts) -->
+    <title>{{title}}</title>
+    <meta name="description" content="{{description}}" />
+    <meta name="author" content="{{author}}" />
+    <link rel="canonical" href="{{pageUrl}}" />
+
+    <!-- Open Graph / réseaux sociaux -->
+    <meta property="og:type" content="profile" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:title" content="{{title}}" />
+    <meta property="og:description" content="{{description}}" />
+    <meta property="og:url" content="{{pageUrl}}" />
+    <meta property="og:image" content="{{ogImage}}" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="{{author}} — Technicien Informatique" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="{{title}}" />
+    <meta name="twitter:description" content="{{description}}" />
+    <meta name="twitter:image" content="{{ogImage}}" />
+
+    <!-- Favicon « AC » -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body>
+    <noscript>
+      <p style="padding:16px;color:#E2E8F0;background:#0A1020;font-family:sans-serif">
+        Ce CV en ligne nécessite JavaScript. Vous pouvez aussi télécharger le
+        <a href="CV_Alexis_Chesneau.pdf" style="color:#67E8F9">CV au format PDF</a>.
+      </p>
+    </noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
