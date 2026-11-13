@@ -90,7 +90,7 @@ export const site = {
    * URL publique du site, SANS slash final (ex. https://alexis-chesneau.vercel.app).
    * Utilisée pour l'image Open Graph absolue. Laisser vide si inconnue.
    */
-  url: '',
+  url: 'https://alexischesneau.github.io/cv',
   lang: 'fr',
 }
 
